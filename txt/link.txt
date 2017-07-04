@@ -1,0 +1,5 @@
+windows 下 php扩展安装
+http://windows.php.net/downloads/pecl/releases/
+
+linux 下扩展安装
+http://pecl.php.net/package-stats.php
