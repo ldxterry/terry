@@ -1,0 +1,3 @@
+标准输出重定向
+> 重定向操作符
+ls -l /usr/bin > ls-output.txt
