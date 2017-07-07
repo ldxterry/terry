@@ -1,0 +1,41 @@
+quit  放弃
+history  拷贝
+touch 文件名   创建一个文件
+mkdir test 创建给文件夹
+
+reboot 重启
+
+chmod 更改权限  U  G  O  user、group、others
+chmod u+x,g+w+x test.text 
+只改文件夹的权限，不更改里面的权限
+
+-R递归
+
+chown  -R 
+改变所有者
+
+useradd tom
+创建一个用户
+
+drwx---rwx. 2 tom    root 4096 Jun 19 05:07 terry
+              所有者 所在组
+chown tom:tom terry/
+改变所有者，跟所有组
+
+拷贝一个文件夹
+cp -rf  /root/terry/jet/a  /root/terry/jet/b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

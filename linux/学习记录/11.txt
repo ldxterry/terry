@@ -1,0 +1,113 @@
+linux  默认使用的是 /bin/bash
+
+本地变量
+定义变量前面不加$
+调用变量的时候前面要使用$
+xx=100
+echo $xx
+unset $xx  取消变量
+
+环境变量  定义
+expert yy=10
+ 
+set export 显示环境变量
+
+删除环境变量
+declare +x aa
+
+位置变量
+
+/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/root/bin:/home/terry
+
+> 按ctrl + d 可以退出
+
+当前目录
+echo $HOME
+
+history 个数
+echo $HISTFILESIZE
+
+
+locale 查看系统支持的编码
+echo $LANG 查看当前的系统编码
+
+read yy  值   将后面的值付给yy
+
+获取数组中的元素
+echo ${xx[2]}
+
+unset 销毁一个变量
+
+
+查看网卡信息
+ifconfig eth0
+
+
+alias 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

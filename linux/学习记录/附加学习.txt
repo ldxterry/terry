@@ -1,0 +1,57 @@
+创建一个用户 
+useradd  xiaoluo
+
+查看信息
+ls /home
+
+同时会会对
+/etc/passwd、/etc/shadow、/etc/group/、/etc/gshadow
+进行修改
+
+默认情况下会创建一个用户邮箱（/var/spool/mail/目录以用户名命名）
+可以使用find 查找与其相关的内容
+find / -name "*terry*"
+
+删除一个用户
+userdel -r terry
+可以查看关于这个用户的信息是否彻底的删除掉
+/var/spool/mail/terry
+/var/cache/gdm/terry
+
+exit 退出用户登录
+
+添加一个用户组
+groupadd testgroup
+删除用户组
+groupdel testgroup
+
+usermod 修改用户账号
+
+
+
+linux 下查看已经登录的用户
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

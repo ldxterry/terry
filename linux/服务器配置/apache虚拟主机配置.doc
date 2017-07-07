@@ -1,0 +1,10 @@
+项目所在目录
+var/www/html/
+配置虚拟机
+http://www.linuxidc.com/Linux/2014-05/101162.htm
+ vim /etc/hosts
+cd /etc/httpd/conf.d
+<VirtualHost 192.168.220.129>
+        ServerName xuniji.com.org
+        DocumentRoot /var/www/html/xuniji
+</VirtualHost>

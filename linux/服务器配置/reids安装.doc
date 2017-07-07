@@ -1,0 +1,31 @@
+Redis 安装
+//http://www.cnblogs.com/zgaspnet/p/3939198.html
+//扩展解压到/usr/local/src
+
+cd  /usr/local/src
+tar  zxvf phpredis-2.2.4.tgz
+cd phpredis-2.2.4
+/usr/bin/phpize
+./configure --with-php-config=/usr/bin/php-config
+make
+make install
+vi /etc/php.ini 
+extension="redis.so"
+:wq! #保存退出
+
+
+sudo service nginx restart
+sudo /etc/init.d/php-fpm restart
+
+
+可能出现的问题
+
+
+
+./configure --with-php-config=/usr/local/php/bin/php-config
+
+
+
+
+
+

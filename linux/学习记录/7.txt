@@ -1,0 +1,152 @@
+~ 代表用户的家目录
+
+直接切换到用户的家目录
+cd ~ tom 
+
+cd ~/tom 切换到目录
+
+删除某个文件
+rmdir a
+
+-p 可以直接把父目录直接创建好了
+mkdir -p c/d/e/f
+ 
+rm -rf 强制递归删除文件
+
+echo $PATH 查找文件 以：分割开来
+
+把路径加入到当前的路径中
+
+PATH = "" 将文件目录添加到路径中 
+
+
+进入这种情况下 ctrl + c  , ctrl + d 都可以退出的
+>
+
+
+/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/terry/bin
+
+
+ls -l --time=ctime  d
+查看某个文件是什么时候创建的
+
+
+cp -rf 文件  文件夹  强制将文件拷贝过来
+
+-p 将文件的属性信息一同拷贝过来
+
+cp -u 文件（a）  文件(b) 如果a比b新会复制，没有的话不会复制
+
+mv a b 将文件a 剪切到 b 内
+
+basename 查看的是文件名
+dirbase 得到的是目录名
+
+
+
+文件夹755
+文件644
+
+
+可以设定文件的属性，相对来说比较安全
+chattr +a  只能添加不能删除
+       +i  不能添加不能删除
+只有root 用户才可以设置 a和i 的属性
+
+
+lsattr 用来查看的
+
+terry  jet123
+
+当一个命令嵌套在其他命令里面的时候，是不会执行的
+
+查看vim 的权限
+ls -l `which vim`
+
+chmod u+s 就是给某个程序的所有者以suid权限，可以像root用户一样操作。
+
+chmod g+s 如果所在组上面添加一个s  下面的会继承
+
+chmot o+t 
+sbit 只能分配给Other 上面
+除了root 和所有者其他人是不能删除的
+
+
+目录的权限默认是755
+文件的权限是644
+umask
+权限过滤符
+
+文件的权限 
+6   6  6
+
+目录
+7   7   7
+
+查看要保留什么
+umask -S
+
+``反引号 特殊的标记，当成一个命令来执行
+
+hostname 查看主机名
+
+
+命令与文件的查询
+查看某个命令所在路径
+which 命令名字
+locale 
+
+find 目录 -属性  值
+
+chown –R root:root rootfs
+将rootfs文件夹及其子录的权限和组均改为root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

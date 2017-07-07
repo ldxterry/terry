@@ -1,0 +1,36 @@
+压缩文件
+
+gzip 文件  压缩
+gzip -d 文件  （解压）
+
+gzip -c 文件 > 文件.gz
+
+ll -lh 查看文件的大小
+
+打包  并且把原文件删除
+tar cvf hosts.tar host --remove-files
+创建打包之后的文件
+
+tar tvf bbb.tar  查看文件里面的内容
+tar xvf bbb.tar  解压文件
+
+tar xvf bbb.tar  -C /目录  解压到我们指定的目录
+
+tar xvf bbb.tar 文件/文件  只解压一部分文件
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

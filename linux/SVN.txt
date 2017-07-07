@@ -1,0 +1,123 @@
+linux svn
+
+rpm -e   subversion   卸载
+
+yum -y install subversion
+
+#http://apr.apache.org/download.cgi
+
+wget http://mirrors.cnnic.cn/apache//apr/apr-1.5.2.tar.gz
+
+#http://mirrors.cnnic.cn/apache//apr/apr-util-1.5.4.tar.gz
+
+wget http://mirrors.cnnic.cn/apache//apr/apr-util-1.5.4.tar.gz
+
+tar -zxvf apr-1.5.2.tar.gz
+
+./configure --prefix=/usr/local/apr
+make
+make install
+
+tar -zxvf apr-util-1.5.4.tar.gz
+./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr
+make
+make install
+
+vi /etc/ld.so.conf   添加
+/user/local/apr/lib
+/user/loacl/apr-util
+ldconfig -v  加载
+
+cd / 回到根目录
+
+mkdir /wangluo
+mkdir svn   创建一个SVN 文件件
+mkdir ./svn/project1   ./当前目录下面
+mkdir ./svn/project2
+svnadmin create /wangluo/svn/project1
+svnadmin create /wangluo/svn/project2         svn 的搭建成功需要上面的两个文件 
+
+svnserve.conf
+[general]
+anon-access = read
+auth-access = write
+password-db = passwd
+authz-db = authz
+
+passwd
+[users]
+zhangsan = zhangsan
+project1 = project1
+project2 = project2
+
+auth
+[groups]
+admin = zhangsan
+project1 = project1
+project2 = project2
+
+
+[/]
+@admin = rw
+[project1:/]
+@admin = rw
+@project1 = rw
+
+复制目录到当前目录
+cp -r ./project/conf ./
+
+
+vi /etc/sysconfig/iptables  设置3690端口号
+service iptables restart
+
+启动SVN服务
+svnserve -d -r /wangluo/svn
+添加自动启动
+
+
+找到项目所在目录   检出到本地
+svn checkout file:///wangluo/svn/project1 ./
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

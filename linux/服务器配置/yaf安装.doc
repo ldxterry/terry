@@ -1,0 +1,37 @@
+安装gcc
+http://jingyan.baidu.com/article/948f5924298d1ad80ef5f946.html
+yum install gcc
+安装pcre
+http://chenzhou123520.iteye.com/blog/1817563
+/usr/local/src/pcre-8.38  安装完目录
+./configure --enable-utf8  
+Make
+make install
+上面暂时无需要安装
+
+yaf 解决问题
+http://blog.csdn.net/mengxiangone/article/details/43740149
+yum install pcre-devel
+
+
+yaf 安装
+//http://my.oschina.net/wojibuzhu/blog/322973
+//扩展解压到/usr/local/src
+
+cd  /usr/local/src
+tar  zxvf yaf-2.2.9.tgz
+cd yaf-2.2.9
+/usr/bin/phpize
+./configure --with-php-config=/usr/bin/php-config
+make
+make install
+vi /etc/php.ini 
+extension="yaf.so"
+:wq! #保存退出
+Service httpd status
+
+
+
+
+
+
