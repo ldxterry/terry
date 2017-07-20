@@ -1,2 +1,13 @@
 = 是赋值， := 是声明变量并赋值。
 
+在语言中使用双引号来表示字符串（常用）
+
+两种创建集合的方式
+make(map[string]string)
+map[string]string{}
+
+
+//map元素查找
+
+type persionInfo struct{ //用来定义数据的类型
+}
