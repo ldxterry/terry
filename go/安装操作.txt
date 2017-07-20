@@ -1,3 +1,20 @@
 windows 下安装目录
 http://jingyan.baidu.com/article/3c48dd3492fc1ee10be358d7.html
 
+go version: 查看当前go版本 版本安装1.8以上的
+
+mysql
+http://www.cnblogs.com/tsiangleo/p/4483657.html
+
+reids扩展
+https://github.com/garyburd/redigo
+
+mongo
+http://www.cnblogs.com/spnt/p/4686128.html
+
+memcache的
+go get github.com/golang/groupcache
+
+
+遇到过的错误
+http://www.genshuixue.com/i-cxy/p/15261248
