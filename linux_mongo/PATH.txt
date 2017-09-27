@@ -1,0 +1,8 @@
+修改方法三:
+通过修改profile文件:
+vim /etc/profile
+/export PATH //找到设置PATH的行，添加
+export PATH=/usr/local/mongodb/bin:$PATH
+生效方法：系统重启
+有效期限：永久有效
+用户局限：对所有用户

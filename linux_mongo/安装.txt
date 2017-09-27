@@ -1,0 +1,7 @@
+http://www.linuxidc.com/Linux/2016-07/133413.htm
+mongod --dbpath /usr/local/kencery/mongoDB/mongodb/db
+
+
+ /usr/local/mongodb/bin/mongod --dbpath=/usr/local/mongodb/data --logpath=/usr/local/mongodb/logs --logappend  --auth --port=27017
+
+
