@@ -1,0 +1,68 @@
+版本
+protobuf-2.6.1.zip
+Php扩展
+protobuf-3.4.0.tgz
+协议
+php-protobuf-master.zip
+
+protoc --version
+
+1、安装protoc
+2、安装php扩展
+3、得到得到protoc-gen-php插件
+
+安装遇到的问题
+/usr/local/bin/protoc: error while loading shared libraries: libprotobuf.so.9
+解决办法
+vim  /etc/ld.so.conf.d/libprotobuf.conf 
+输入
+/usr/local/lib
+保存
+
+执行
+sudo ldconfig
+
+
+报错
+ERROR: The dependencies are not installed. Run "composer install" in order to install them.
+--php_out: protoc-gen-php: Plugin failed with status code 1.
+在扩展里面执行
+composer install
+
+
+安装扩展
+php-config 找不到
+
+添加扩展
+extension="protobuf.so"
+
+nginx重启
+/etc/rc.d/init.d/nginx restart
+/etc/rc.d/init.d/php-fpm restart
+
+
+
+protoc --plugin=protoc-gen-php='/var/disk/lib/php-protobuf-master/protoc-gen-php.php'  --php_out= SearchTerm.proto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

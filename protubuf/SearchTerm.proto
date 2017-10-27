@@ -1,0 +1,61 @@
+package Proto;
+
+message Odd {
+    optional int32 odd_win = 1;
+    optional int32 odd_lose = 2;
+    optional int32 odd_draw = 3;
+}
+message Trend{
+  optional int32 win = 1;
+  optional int32 lose = 2;
+  optional int32 draw = 3;
+}
+message Trendpercent{
+   optional int32 winup = 1;
+   optional int32 windown = 2;
+   optional int32 loseup = 3;
+   optional int32 losedown = 4;
+   optional int32 drawup = 5;
+   optional int32 drawdown = 6;
+}
+message Op {
+    optional Odd odd = 1;
+    optional Trend trend = 2;
+    optional Trendpercent trend_percent = 3;
+    optional int32 bid = 4;
+    optional int32 type = 5;
+}
+
+message Gsop{
+  optional int32 win = 1;
+  optional int32 draw = 2;
+  optional int32 lose = 3;
+}
+message Gsoppercent{
+  optional int32 odd_win = 1;
+  optional int32 odd_lose = 2;
+  optional int32 odd_draw = 3;
+}
+message Gs {
+  optional Gsop gs_op = 1;
+  optional Gsoppercent gs_op_percent = 2;
+  optional int32 guess_result = 3;
+  optional int32 percent = 4;
+}
+
+message Yp {
+  optional Odd odd = 1;
+  optional int32 bid = 2;
+  optional int32 type = 3;
+  optional int32 yp_trend = 4;
+}
+
+message SearchTerm {
+  optional Op op = 1;
+  optional Gs gs = 2;
+  optional Yp yp = 3;
+  optional int32 model_id = 4;
+}
+
+
+
