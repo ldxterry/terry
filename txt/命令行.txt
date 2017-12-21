@@ -1,0 +1,130 @@
+鲁P300RH
+发动机号码 DM4096
+车辆识别代码 LSVWA2187G2303375
+
+
+/bin/bash /var/disk/web/dev_local/mofang-php-script/match_guard.sh
+
+ps -ef |grep java 检查进程是否存在
+
+linux 命令 shell
+-eq 等于
+-ne 不等于
+-gt 大于
+-ge 大于等于
+-lt 小于
+-le 小于等于
+
+ps aux | grep feedodds_spider.py | grep -v grep |wc -l
+
+ps aux | grep feedodds_spider.py | grep T | grep -v grep | wc -l
+
+ps aux 显示进程
+grep feedodds_spider.py 滤出进程
+grep -v grep 过滤掉进程
+wc -l  产看有多少进程
+awk '{ print $1; }' 输出第一列
+
+
+if [ ! -e "filename" ]  -e表示只要filename存在，则为真，不管filename是什么类型，当然这里加了!就取反
+
+
+
+
+
+ps -ef|grep -i feedodds_spider.py | grep -v  grep |awk '{print $2}'
+
+
+Linux shell if [ -n ] 正确使用方法
+if [ str1 = str2 ]　　　　　  当两个串有相同内容、长度时为真 
+if [ str1 != str2 ]　　　　　 当串str1和str2不等时为真 
+if [ -n str1 ]　　　　　　 当串的长度大于0时为真(串非空) 
+if [ -z str1 ]　　　　　　　 当串的长度为0时为真(空串) 
+if [ str1 ]　　　　　　　　 当串str1为非空时为真
+
+
+
+if [ $? -eq 0 ];then $?是shell变量,表示"最后一次执行命令"的退出状态.0为成功,非0为失败
+else
+fi
+
+
+变量求减法
+echo $[$[ $now - $last_modify ] - $dead_duration]
+
+
+df -lh ：查看磁盘使用情况命令
+
+top命令查看系统的CPU、内存、运行时间、交换分区、执行的线程等信息free 
+free的输出一共有四行，第四行为交换区的信息，分别是交换的总量（total），使用量（used）和有多少空闲的交换区（free）
+
+
+这样就可以查看到该文件夹下，深度为1的所有文件夹及文件的占用空间了
+du -h --max-depth=1
+
+du -sh : 查看当前目录总共占的容量。而不单独列出各子项占用的容量
+
+
+杀死查找出的所有进程
+kill -9 `ps -ef|grep testip.php | grep -v grep |awk '{print $2}'`
+
+
+
+webbench -c 5000 -t 60 http://192.168.1.198/big/index.php
+ab -r -n 6000 -c 5000  http://192.168.1.198/big/index.php
+
+
+
+uptime命令主要用于获取主机运行时间和查询linux系统负载等信息
+cat /proc/loadavg
+tload
+top
+
+
+free -m 查看内存大小
+
+
+模糊搜索某个文件
+find . -name 'update*'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

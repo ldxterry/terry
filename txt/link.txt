@@ -1,3 +1,13 @@
+服务器重启操作
+http://blog.csdn.net/zalion/article/details/45192545
+
+workerman
+http://www.workerman.net/workerman-chat
+
+phpStorm 激活码
+http://jingyan.baidu.com/article/624e745957a19734e8ba5ab9.html
+
+
 windows 下 php扩展安装
 http://windows.php.net/downloads/pecl/releases/
 

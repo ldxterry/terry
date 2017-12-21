@@ -1,0 +1,6 @@
+服务器集群
+server cluster
+upstream myCluste
+
+负载均衡
+https://zhidao.baidu.com/question/2138875503677902868.html

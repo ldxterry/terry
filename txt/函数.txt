@@ -1,0 +1,12 @@
+echo memory_get_usage(); 可以获取查看内存使用，单位是字节
+function calc($size,$digits=2){
+    $unit= array('','K','M','G','T','P');
+    $base= 1024;
+    $i = floor(log($size,$base));
+    $n = count($unit);
+    if($i >= $n){
+        $i=$n-1;
+    }
+    return round($size/pow($base,$i),$digits).' '.$unit[$i] . 'B';
+}
+字节转换
