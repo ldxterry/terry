@@ -19,9 +19,8 @@ php-fpm 是一个PHPFastCGI管理器
    内存足够用的情况下优先使用静态的再使用动态的
 
 
-Tomcat
+5、Tomcat
 
-6、php内核
-   http://www.php-internals.com/book/
+6、
 
 
