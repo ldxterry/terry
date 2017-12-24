@@ -19,7 +19,24 @@ https://github.com/drslump/Protobuf-PHP
 pear channel-discover pear.pollinimini.net
 pear install drslump/Protobuf-beta
 
-
-
 protoc --plugin=/usr/local/php/bin/protoc-gen-php --php_out=./ -I. SearchTerm.proto
+
+
+
+
+
+安装低版本
+https://segmentfault.com/a/1190000005065869
+
+1、protoc
+2、php扩展
+3、protoc-gen-php
+
+出现的问题
+composer.json 里面更改
+	"nikic/php-parser": "3.1.2",
+	 https://packagist.org/packages/nikic/php-parser#dev-master
+protoc --plugin=/var/disk/lib/protoc-gen-php-master/bin/protoc-gen-php --php_out=./ -I. SearchTerm.proto
+
+
 
