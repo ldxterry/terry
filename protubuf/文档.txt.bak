@@ -10,8 +10,11 @@ vim  /etc/ld.so.conf.d/libprotobuf.conf
 输入
 /usr/local/lib
 保存
+
 执行
 sudo ldconfig
+
+
 
 
 2、得到得到protoc-gen-php插件

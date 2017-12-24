@@ -19,8 +19,24 @@ php-fpm 是一个PHPFastCGI管理器
    内存足够用的情况下优先使用静态的再使用动态的
 
 
-5、Tomcat
+Tomcat
 
-6、
+6、php内核
+   http://www.php-internals.com/book/
+
+
+
+分布式追踪系统用的是什么
+    采集-发生-落盘分析
+
+分布式文件系统，分布式数据库，分布式WebService，分布式计算
+
+
+
+
+
+
+
+
 
 

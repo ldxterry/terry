@@ -25,3 +25,19 @@ Tomcat
    http://www.php-internals.com/book/
 
 
+
+分布式追踪系统用的是什么
+    采集-发生-落盘分析
+
+分布式文件系统，分布式数据库，分布式WebService，分布式计算
+
+
+
+PHP PSR 基本代码规范
+RPC调用接口
+
+
+
+
+
+
